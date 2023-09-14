@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  position: relative;
 }
 *,
 *::after,
@@ -15,3 +16,35 @@ body {
   line-height: 1.6;
 }
 
+.menu {
+  width: 14rem;
+  background-color: rgb(242, 184, 184);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menuItem {
+  list-style: none;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: rgb(191, 145, 145);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2rem 0;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+.menuItem:hover {
+  background-color: #2ed935;
+  color: #fff;
+}
+.delete:hover {
+  background-color: #f70b0b;
+}
